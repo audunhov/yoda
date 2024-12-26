@@ -30,8 +30,8 @@ func (cf *CSVFormatter) Format(records [][]string) (string, error) {
 }
 
 type JSONOutput struct {
-	Setning string
-	Ord     string
+	Sentence string
+	Word     string
 }
 
 type JSONFormatter struct{}
@@ -41,8 +41,8 @@ func (jf *JSONFormatter) Format(records [][]string) (string, error) {
 	var lines []JSONOutput
 	for _, record := range records[1:] {
 		lines = append(lines, JSONOutput{
-			Setning: record[0],
-			Ord:     record[1],
+			Sentence: record[0],
+			Word:     record[1],
 		})
 	}
 

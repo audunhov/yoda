@@ -16,7 +16,7 @@ cat sentences.csv | yoda
 
 The format of the CSV file should be:
 ```csv
-Setning,Ord
+Sentence,Word
 Example sentence to shuffle,
 Example sentence to shuffle,shuffle
 Example sentence to shuffle,all
