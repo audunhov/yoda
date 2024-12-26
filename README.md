@@ -17,15 +17,10 @@ cat sentences.csv | yoda
 The format of the CSV file should be:
 ```csv
 Sentence,Word
-Example sentence to shuffle,
-Example sentence to shuffle,shuffle
-Example sentence to shuffle,all
+Will shuffle the words but not the letters,
+Will shuffle the word 'shuffle' but not the words,shuffle
+Will shuffle the letters of all words but not the words,all
 ```
-
-Meaning:
-- Not having a word means the program shuffles the words
-- Having a word means the program shuffles the letters in that word
-- Having the word 'all' means the program shuffles the letters in all words
 
 > Note that the program assumes the first line of the csv file is headers and will be skipped.
 
